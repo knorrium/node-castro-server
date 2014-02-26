@@ -12,5 +12,7 @@ html
 		if files.length
 			each file in files
 				p #{file}
+					.line
+						a(href =file) Download
 		else
 			p No recordings yet :(
