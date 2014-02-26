@@ -8,4 +8,9 @@ html
 			h1
 		.container
 
-		h2 Castro Recordings
+		h2 #{title}
+		if files.length
+			each file in files
+				p #{file}
+		else
+			p No recordings yet :(
